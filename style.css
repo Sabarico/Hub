@@ -1,0 +1,141 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+
+    background:#ececec;
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+.cover{
+
+    width:320px;
+    height:470px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:linear-gradient(135deg,#27b6b3,#1da9aa);
+
+    border:8px solid rgba(255,255,255,.15);
+
+    box-shadow:0 25px 45px rgba(0,0,0,.18);
+
+}
+
+
+.overlay{
+
+    position:absolute;
+    inset:0;
+
+    background:
+    linear-gradient(30deg,rgba(255,255,255,.03) 12%,transparent 12.5%,transparent 87%,rgba(255,255,255,.03) 87.5%),
+    linear-gradient(150deg,rgba(0,0,0,.05) 12%,transparent 12.5%,transparent 87%,rgba(0,0,0,.05) 87.5%),
+    linear-gradient(90deg,rgba(255,255,255,.03) 2%,transparent 2.5%,transparent 97%,rgba(255,255,255,.03) 97.5%);
+
+    background-size:70px 70px;
+
+    opacity:.8;
+
+}
+
+
+.content{
+
+    position:absolute;
+
+    width:100%;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    text-align:center;
+
+    z-index:2;
+
+}
+
+h1{
+
+    color:white;
+
+    font-size:44px;
+
+    font-weight:700;
+
+    line-height:1.15;
+
+}
+
+h1 span{
+
+    color:rgba(255,255,255,.45);
+
+}
+
+.line{
+
+    margin:28px auto;
+
+    width:110px;
+
+    height:5px;
+
+    background:rgba(255,255,255,.25);
+
+}
+
+.line span{
+
+    display:block;
+
+    width:28px;
+
+    height:100%;
+
+    background:white;
+
+}
+
+.year{
+
+    color:white;
+
+    letter-spacing:8px;
+
+    font-size:18px;
+
+    font-weight:300;
+
+}
+
+
+.corner{
+
+    position:absolute;
+
+    right:0;
+    bottom:0;
+
+    width:0;
+    height:0;
+
+    border-left:65px solid transparent;
+    border-top:65px solid transparent;
+    border-right:65px solid white;
+    border-bottom:65px solid white;
+
+}
